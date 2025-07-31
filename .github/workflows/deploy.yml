@@ -8,7 +8,7 @@ env:
   AWS_REGION: ap-southeast-1
   ECR_REPOSITORY: stress
   ECS_CLUSTER: babicluster
-  ECS_SERVICE: babi123
+  ECS_SERVICE: babiservice
   CONTAINER_NAME: stress
   ECS_TASK_NAME: stress-task 
   TASK_DEFINITION_FILE: ecs-task-def.json
