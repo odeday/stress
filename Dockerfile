@@ -11,7 +11,7 @@ COPY package*.json ./
 RUN npm install
 
 # Salin semua file project ke dalam container
-COPY . .
+COPY app .
 
 # Jalankan server saat container start
 CMD ["npm", "start"]
