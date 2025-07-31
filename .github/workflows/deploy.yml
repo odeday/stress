@@ -10,6 +10,7 @@ env:
   ECS_CLUSTER: babicluster
   ECS_SERVICE: babi123
   CONTAINER_NAME: stress
+  ECS_TASK_NAME: stress-task 
   TASK_DEFINITION_FILE: ecs-task-def.json
 
 jobs:
@@ -48,7 +49,7 @@ jobs:
     - name: Download current task definition
       run: |
         aws ecs describe-task-definition \
-          --task-definition $ECS_SERVICE \
+          --task-definition $ECS_TASK_NAME \
           --query taskDefinition > $TASK_DEFINITION_FILE
         cat $TASK_DEFINITION_FILE
 
