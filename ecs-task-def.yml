@@ -1,7 +1,7 @@
 {
   "family": "stress-task",
   "networkMode": "awsvpc",
-  "executionRoleArn": "arn:aws:iam::123456789012:role/ecsTaskExecutionRole",
+  "executionRoleArn": "arn:aws:iam::022795281879:role/ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "stress",
