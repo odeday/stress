@@ -5,7 +5,7 @@ FROM node:20-alpine
 WORKDIR /app
 
 # Salin file package.json dan (jika ada) package-lock.json
-COPY package*.json ./
+COPY app/package*.json ./
 
 # Install dependency
 RUN npm install
